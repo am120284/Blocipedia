@@ -1,0 +1,10 @@
+<h1>My Wikis</h1>
+
+<div class="container">
+	<%= @wikis.each do |w| %>
+	<ul>
+		<li><%= w.title %><%= link_to 'Edit', edit_wiki_path(@wikis) %> <%= link_to 'Delete', method: :delete %></li>
+	</ul>
+
+	<% end %>
+</div>
